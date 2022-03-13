@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/laszlo-ratesic/not-yo-mommas-hacker-tracker#readme",
   "dependencies": {
+    "console.table": "^0.10.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "gradient-string": "^2.0.0",
+    "inquirer": "^8.2.1",
     "mysql2": "^2.3.3"
   }
 }

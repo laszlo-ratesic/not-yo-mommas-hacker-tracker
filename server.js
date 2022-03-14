@@ -21,5 +21,5 @@ app.listen(PORT, () => {
     console.log(
         gradient.atlas(`Server running on port ${PORT}... You better go catch it @ http://localhost:${PORT}`)
     );
-    new Organization().mainMenu();
+    new Organization().seedDatabase();
 })

@@ -1,4 +1,5 @@
-INSERT INTO departments (name)
+INSERT INTO
+    departments (name)
 VALUES
     ('Administration/Operations'),
     ('Research & Development'),
@@ -6,9 +7,14 @@ VALUES
     ('Sales'),
     ('Human Resources'),
     ('Customer Service'),
-    ('Accounting & Finance');
+    ('Accounting & Finance'),
+    ('Deck'),
+    ('Engine'),
+    ('Electro-Technical'),
+    ('Stewards');
 
-INSERT INTO roles (title, salary, department_id)
+INSERT INTO
+    roles (title, salary, department_id)
 VALUES
     ('CEO', 550000.00, 1),
     ('COO', 275000.00, 1),
@@ -26,9 +32,31 @@ VALUES
     ('Customer Success Manager', 55000.00, 6),
     ('Helpdesk Support Specialist', 35000.00, 6),
     ('Accounts Manager', 85000.00, 7),
-    ('Director of Purchasing', 95000.00, 7);
+    ('Director of Purchasing', 95000.00, 7),
+    ('Captain', 115000.00, 8),
+    ('Deck Officer', 85000.00, 8),
+    ('Chief Mate', 60000.00, 8),
+    ('Second Mate', 55000.00, 8),
+    ('Third Mate', 50000.00, 8),
+    ('Deck Cadet', 35000.00, 8),
+    ('Deck Rating', 25000.00, 8),
+    ('Boatswain', 25000.00, 8),
+    ('Engineering Officer', 85000.00, 9),
+    ('First Engineer', 80000.00, 9),
+    ('Second Engineer', 75000.00, 9),
+    ('Third Engineer', 70000.00, 9),
+    ('Fourth Engineer', 65000.00, 9),
+    ('Engine Rating', 60000.00, 9),
+    ('Motorman', 55000.00, 9),
+    ('Oiler', 50000.00, 9),
+    ('Wiper', 45000.00, 9),
+    ('Electro-technical Officer', 85000.00, 10),
+    ('Electrical Engineer', 85000.00, 10),
+    ('Chief Steward', 60000.00, 11),
+    ('Chief Cook', 55000.00, 11);
 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO
+    employees (first_name, last_name, role_id, manager_id)
 VALUES
     ('Logan', 'Roy', 1, NULL),
     ('David', 'Wallace', 2, NULL),
@@ -46,4 +74,24 @@ VALUES
     ('Jon', 'Snow', 14, NULL),
     ('Samwell', 'Tarly', 15, 14),
     ('Tyrion', 'Lannister', 16, 4),
-    ('Helen', 'Peckham', 17, 16);
+    ('Helen', 'Peckham', 17, 16),
+    ('Pooh', 'Rule', 8, 6),
+    ('Vanya', 'Vaud', 10, 3),
+    ('Giralda', 'Sacker', 11, 8),
+    ('Thatch', 'Vedeneev', 9, 2),
+    ('Eilis', 'Fishlee', 11, 9),
+    ('Kristo', 'Cammish', 9, 10),
+    ('Marieann', 'Andretti', 10, 9),
+    ('Matty', 'Hilbourne', 11, 7),
+    ('Renelle', 'Bresner', 8, 5),
+    ('Kendall', 'Jullian', 8, 3),
+    ('Marleen', 'Plain', 10, 10),
+    ('Marcel', 'Di Claudio', 10, 8),
+    ('Stillmann', 'Mosey', 8, 5),
+    ('Mara', 'Dibson', 11, 7),
+    ('Ana', 'Dartnall', 8, 8),
+    ('Emlynn', 'Fritzer', 9, 3),
+    ('Carolyn', 'Weight', 10, 7),
+    ('Bertha', 'Sybe', 11, 8),
+    ('Cristine', 'Cramer', 9, 6),
+    ('Gene', 'McMonnies', 10, 5);
